@@ -4,45 +4,45 @@ import {} from "./navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white px-2 sm:px-4 rounded">
+    <nav className="bg-white px-2 sm:px-4 rounded flex justify-center">
       <div className="container absolute flex flex-wrap justify-between items-center mx-auto h-20">
-        <a href="/Home" className="cursor-pointer flex logo p-1 md:m-auto">
+        <Link to="/Home" className="cursor-pointer flex logo p-1">
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
 
         <div className="hidden w-full md:block md:w-auto">
           <ul className="flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-16 md:mt-0 md:text-xl md:font-medium md:border-0 ">
             <li>
-              <a
-                href="/Home"
-                className="block py-2 pr-4 pl-3 text-dark-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              <Link
+                to="/Home"
+                className="block text-dark-700 rounded h-auto w-auto hover:bg-pink-400 md:border-0 md:hover:text-slate-100 md:p-3"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/About"
-                className="block py-2 pr-4 pl-3 text-dark-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              <Link
+                to="/About"
+                className="block text-dark-700 rounded h-auto w-auto hover:bg-pink-400 md:border-0 md:hover:text-slate-100 md:p-3"
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/Activities"
-                className="block py-2 pr-4 pl-3 text-dark-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              <Link
+                to="/Activities"
+                className="block text-dark-700 rounded h-auto w-auto hover:bg-pink-400 md:border-0 md:hover:text-slate-100 md:p-3"
               >
                 Activities
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/Contact"
-                className="block py-2 pr-4 pl-3 text-dark-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              <Link
+                to="/Contact"
+                className="block text-dark-700 rounded h-auto w-auto hover:bg-pink-400 md:border-0 md:hover:text-slate-100 md:p-3"
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
