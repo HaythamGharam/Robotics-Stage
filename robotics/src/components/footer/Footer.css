@@ -1,0 +1,68 @@
+.container{
+	max-width: 2000px;
+	margin:auto;
+}
+
+.row{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	color: white;
+}
+
+.row2{
+	display: grid;
+	color: white;
+}
+
+.row > ul{
+	list-style: none;
+	padding: 0 10px;
+}
+
+.fa-calendar-star {
+	color: white;
+}
+
+.footer{
+	background-color: black;
+    padding: 70px 0 0 0;
+}
+
+.col{
+    padding: 0 20px;
+}
+
+.site-nav {
+	color: white;
+	display: block;
+}
+
+.nav-map, .socials, .contact {
+	justify-self: center;
+}
+
+.copyright {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+	.row {
+		display: block;
+		margin: auto;
+		width: 50%;
+		text-align: center;
+	}
+
+	.col {
+		width: 100%;
+		padding: 20px 20px 20px 20px;
+	}
+	.contact {
+		margin-left: 0;
+	}
+	.socials {
+		margin-left: 0;
+	}
+}
