@@ -50,3 +50,53 @@
   cursor: pointer;
 }
 /* members region end */
+
+.home-bottom {
+  background-color: deepskyblue;
+
+}
+
+.home-bottom > div {
+  justify-content: center;
+  align-items: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* act region start */
+.activities-display {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 19px;
+  margin: 10px 0px;
+}
+.activity {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.act-img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.act-img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.act-title {
+  text-align: center;
+}
+
+/* act region end */
