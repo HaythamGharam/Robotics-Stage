@@ -4,7 +4,7 @@ import {} from "./home.css";
 import yessine from "../../images/members/yessine.jpg";
 import committee from "../../images/members-section-cover.png";
 import arduino from "../../images/arduino-training.jpg";
-import event from "../../images/arduino-training.jpg";
+import activities from "../../images/activities-section-cover.png";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
@@ -74,12 +74,12 @@ const Home = () => {
               >
                 <a href="https://facebook.com" target="_blank">
                   <button className="facebook">
-                    <i class="fab fa-facebook"></i>
+                    <i className="fab fa-facebook"></i>
                   </button>
                 </a>
                 <a href="https://linkedin.com" target="_blank">
                   <button className="linkedin">
-                    <i class="fab fa-linkedin"></i>
+                    <i className="fab fa-linkedin"></i>
                   </button>
                 </a>
               </div>
@@ -112,11 +112,17 @@ const Home = () => {
 
       {/* activities region start */}
       <section>
+        <div className="title-area flex justify-center items-center md:my-10">
+          <img src={activities} alt="cover" className="w-64 h-64" />
+          <h1 className="section-title text-center font-bold text-4xl">
+            Our Latest Activities
+          </h1>
+        </div>
         <div className="activities-display">
           <div className="activity">
             <img src={arduino} alt="#" className="act-img" />
-            <h3 className="act-title">Arduino Training</h3>
-            <p>
+            <h3 className="act-title text-white font-bold">Arduino Training</h3>
+            <p className="font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
               omnis!
             </p>
@@ -150,8 +156,8 @@ const Home = () => {
           </div>
           <div className="activity">
             <img src={arduino} alt="#" className="act-img" />
-            <h3 className="act-title">Arduino Training</h3>
-            <p>
+            <h3 className="act-title text-white font-bold">Arduino Training</h3>
+            <p className="font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
               omnis!
             </p>
@@ -185,8 +191,8 @@ const Home = () => {
           </div>
           <div className="activity">
             <img src={arduino} alt="#" className="act-img" />
-            <h3 className="act-title">Arduino Training</h3>
-            <p>
+            <h3 className="act-title text-white font-bold">Arduino Training</h3>
+            <p className="font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
               omnis!
             </p>

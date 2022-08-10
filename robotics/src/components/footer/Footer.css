@@ -6,12 +6,12 @@
 .row{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	color: white;
+	color: black;
 }
 
 .row2{
 	display: grid;
-	color: white;
+	color: black;
 }
 
 .row > ul{
@@ -24,8 +24,12 @@
 }
 
 .footer{
-	background-color: black;
-    padding: 70px 0 0 0;
+	background-color: rgb(224 242 254);
+    padding: 40px 0 0 0;
+}
+
+.footer-title{
+	color: deepskyblue;
 }
 
 .col{
@@ -33,7 +37,7 @@
 }
 
 .site-nav {
-	color: white;
+	color: black;
 	display: block;
 }
 

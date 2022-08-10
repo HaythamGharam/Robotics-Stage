@@ -80,6 +80,7 @@
   flex-direction: column;
   gap: 20px;
   text-align: center;
+  background-color: deepskyblue;
 }
 .act-img {
   margin-bottom: 10px;

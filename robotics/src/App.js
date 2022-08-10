@@ -5,20 +5,19 @@ import '@fontsource/roboto/700.css';
 import Navbar from "./components/navbar/Navbar";
 import Footer from './components/footer/Footer';
 import Home from "./components/home/Home";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-// import About from "./components/about/About";
+import About from "./components/about/About";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
-        <Footer />
-        
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+        </Routes>
+        <Footer />   
       </div>
     </BrowserRouter>
   );
