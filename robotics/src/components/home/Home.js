@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {} from "./home.css";
+import homebot from "../../images/PNG/homebot.png"
 import yessine from "../../images/members/yessine.jpg";
+import imen from "../../images/members/imen.jpeg";
 import committee from "../../images/members-section-cover.png";
 import arduino from "../../images/arduino-training.jpg";
 import activities from "../../images/activities-section-cover.png";
@@ -25,6 +27,8 @@ const Home = () => {
 
   const [isShown, setIsShown] = useState(false);
 
+  const [isShown1, setIsShown1] = useState(false);
+
   const onMouseEnter = () => {
     setIsShown(true);
   };
@@ -33,13 +37,34 @@ const Home = () => {
     setIsShown(false);
   };
 
+  const onMouseEnter1 = () => {
+    setIsShown1(true);
+  };
+
+  const onMouseLeave1 = () => {
+    setIsShown1(false);
+  };
+
+  const btnstyles = {
+    background: "rgb(229,246,255)",
+    width: "200px",
+    borderradius: "30px",
+    padding: "13px",
+    boxshadow: "5px 5px #F8F3FC",
+    fontweight: "500",
+    color: "black",
+  };
+
   return (
     <div className="home-wrapper">
       <section className="header">
+        <img src={homebot} width="300px" className="homebot"/>
         <div className="header-content pb-16">
           <h1> IIT Robotics Club </h1>
           <br />
           <p>Embrace The Robolution</p>
+          <br />
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
         </div>
       </section>
 
@@ -51,8 +76,10 @@ const Home = () => {
             Our Committee Members
           </h1>
         </div>
+
         <div className="members-container grid grid-cols-3">
-          <div className="max-w-xs bg-white flex flex-col justify-center items-center relative">
+
+          <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
             <img
               className="rounded-full w-64 h-64"
               src={yessine}
@@ -62,15 +89,49 @@ const Home = () => {
               style={{ filter: isShown ? "blur(2px)" : "none" }}
             />
             <div className="p-5 flex justify-center flex-col">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
                 Mohamed Yessine Ksibi
               </h5>
-              <p>Chairman</p>
+              <p className="text-center">Chairman</p>
               <div
                 className="member-socials"
                 style={{ display: isShown ? "inline-block" : "none" }}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
+              >
+                <a href="https://facebook.com" target="_blank">
+                  <button className="facebook">
+                    <i className="fab fa-facebook"></i>
+                  </button>
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                  <button className="linkedin">
+                    <i className="fab fa-linkedin"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
+            <img
+              className="rounded-full w-64 h-64"
+              src={imen}
+              alt="Imen Khlif"
+              onMouseEnter={onMouseEnter1}
+              onMouseLeave={onMouseLeave1}
+              style={{ filter: isShown1 ? "blur(2px)" : "none" }}
+            />
+            <div className="p-5 flex justify-center flex-col">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Imen Khlif
+              </h5>
+              <p>General Secretary</p>
+              <div
+                className="member-socials"
+                style={{ display: isShown1 ? "inline-block" : "none" }}
+                onMouseEnter={onMouseEnter1}
+                onMouseLeave={onMouseLeave1}
               >
                 <a href="https://facebook.com" target="_blank">
                   <button className="facebook">
@@ -102,7 +163,7 @@ const Home = () => {
             </p>
           </div>
           <Link to="/">
-            <Button variant="contained" size="large">
+            <Button variant="contained" size="large" sx={btnstyles}>
               Join Us
             </Button>
           </Link>
