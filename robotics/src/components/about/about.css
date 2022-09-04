@@ -1,0 +1,78 @@
+.aboutbot {
+  position: absolute;
+  top: 30vh;
+  left: 20%;
+}
+
+.aboutus-section {
+  padding: 0px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.goal {
+    background-color: rgb(28,203,200);
+}
+
+.about > div > h2 {
+  font-size: 25px;
+}
+
+.about > p {
+  width: 70%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.about-img-qs {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .about-img-qs {
+    width: 100%;
+  }
+
+  .about > p {
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .about-cover {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .about {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about-info > h1 {
+    font-weight: 900;
+    font-size: 60px;
+  }
+
+  .about > p {
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
