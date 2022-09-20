@@ -14,7 +14,7 @@ const About = () => {
         <div className="about text-black">
           <div className="about-img-qs">
             <img src={whoabout} alt="whoabout" height="100px" width="100px" />
-            <h2 className="mt-3 text-center">What is Lydia Jobs?</h2>
+            <h2 className="mt-3 text-center">What is IIT Robotics Club?</h2>
           </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
@@ -45,7 +45,7 @@ const About = () => {
         <div className="about text-black">
           <div className="about-img-qs">
             <img src={howabout} alt="howabout" height="100px" width="100px" />
-            <h2 className="mt-3 text-center">How Lydia Jobs works?</h2>
+            <h2 className="mt-3 text-center">How To Join IIT Robotics Club?</h2>
           </div>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium

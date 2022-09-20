@@ -146,6 +146,39 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
+            <img
+              className="rounded-full w-64 h-64"
+              src={imen}
+              alt="Imen Khlif"
+              onMouseEnter={onMouseEnter1}
+              onMouseLeave={onMouseLeave1}
+              style={{ filter: isShown1 ? "blur(2px)" : "none" }}
+            />
+            <div className="p-5 flex justify-center flex-col">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Imen Khlif
+              </h5>
+              <p>General Secretary</p>
+              <div
+                className="member-socials"
+                style={{ display: isShown1 ? "inline-block" : "none" }}
+                onMouseEnter={onMouseEnter1}
+                onMouseLeave={onMouseLeave1}
+              >
+                <a href="https://facebook.com" target="_blank">
+                  <button className="facebook">
+                    <i className="fab fa-facebook"></i>
+                  </button>
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                  <button className="linkedin">
+                    <i className="fab fa-linkedin"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       {/* members region end */}
@@ -162,7 +195,7 @@ const Home = () => {
               has a lot to offer to you and welcomes you as part of its family
             </p>
           </div>
-          <Link to="/">
+          <Link to="/join">
             <Button variant="contained" size="large" sx={btnstyles}>
               Join Us
             </Button>

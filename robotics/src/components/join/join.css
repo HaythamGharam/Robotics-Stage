@@ -1,0 +1,82 @@
+.progress-bar {
+  width: 400px;
+  height: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.progress-bar > div {
+    width: 33.3%;
+    height: 100%;
+    background-color: rgb(28,203,200);
+    border-radius: 5px;
+  }
+
+.join-form {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 25%;
+  width: 50%;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 lightblue;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 20px; */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+}
+
+.input-field {
+  background-color: transparent;
+  border-bottom: 2px solid rgb(28, 202, 199);
+  padding: 10px 5px;
+  margin-bottom: 5px;
+}
+
+.input-field:focus {
+  border: 1px solid rgb(28, 202, 199);
+  box-shadow: 0 0 3px rgb(28, 202, 199);
+  outline-offset: 0px;
+  outline: none;
+}
+
+.join-btn {
+  padding: 10px;
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
