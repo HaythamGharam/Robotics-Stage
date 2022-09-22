@@ -71,7 +71,7 @@ const Home = () => {
       {/* Members region start */}
       <section className="members-section m-auto w-full">
         <div className="title-area flex justify-center items-center md:my-10">
-          <img src={committee} alt="cover" className="w-64 h-64" />
+          <img src={committee} alt="cover" className="w-64 h-64 section-bot" />
           <h1 className="section-title text-center font-bold text-4xl">
             Our Committee Members
           </h1>
@@ -207,7 +207,7 @@ const Home = () => {
       {/* activities region start */}
       <section>
         <div className="title-area flex justify-center items-center md:my-10">
-          <img src={activities} alt="cover" className="w-64 h-64" />
+          <img src={activities} alt="cover" className="w-64 h-64 section-bot" />
           <h1 className="section-title text-center font-bold text-4xl">
             Our Latest Activities
           </h1>
