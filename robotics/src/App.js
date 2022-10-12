@@ -7,7 +7,7 @@ import Footer from './components/footer/Footer';
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Contact from "./components/contact-us/Contact";
-import Join from "./components/join/Join";
+import JoinForm from "./components/joinForm/JoinForm";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact/>} />
-          <Route path="/join" element={<Join/>} />
+          <Route path="/joinForm" element={<JoinForm/>}/>
         </Routes>
         <Footer />   
       </div>

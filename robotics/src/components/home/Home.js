@@ -195,7 +195,7 @@ const Home = () => {
               has a lot to offer to you and welcomes you as part of its family
             </p>
           </div>
-          <Link to="/join">
+          <Link to="/joinForm">
             <Button variant="contained" size="large" sx={btnstyles}>
               Join Us
             </Button>
