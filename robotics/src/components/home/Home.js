@@ -13,6 +13,7 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import Image from "./Image.js";
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -27,7 +28,6 @@ const Home = () => {
 
   const [isShown, setIsShown] = useState(false);
 
-  const [isShown1, setIsShown1] = useState(false);
 
   const onMouseEnter = () => {
     setIsShown(true);
@@ -35,14 +35,6 @@ const Home = () => {
 
   const onMouseLeave = () => {
     setIsShown(false);
-  };
-
-  const onMouseEnter1 = () => {
-    setIsShown1(true);
-  };
-
-  const onMouseLeave1 = () => {
-    setIsShown1(false);
   };
 
   const btnstyles = {
@@ -73,110 +65,100 @@ const Home = () => {
         <div className="title-area flex justify-center items-center md:my-10">
           <img src={committee} alt="cover" className="w-64 h-64 section-bot" />
           <h1 className="section-title text-center font-bold text-4xl">
-            Our Committee Members
+            Our Executive Board
           </h1>
         </div>
 
         <div className="members-container grid grid-cols-3">
 
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <img
-              className="rounded-full w-64 h-64"
-              src={yessine}
-              alt="Med Yessine Ksibi"
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
-              style={{ filter: isShown ? "blur(2px)" : "none" }}
-            />
+            <Image src={yessine} />
             <div className="p-5 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
                 Mohamed Yessine Ksibi
               </h5>
               <p className="text-center">Chairman</p>
-              <div
-                className="member-socials"
-                style={{ display: isShown ? "inline-block" : "none" }}
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
-              >
-                <a href="https://facebook.com" target="_blank">
-                  <button className="facebook">
-                    <i className="fab fa-facebook"></i>
-                  </button>
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                  <button className="linkedin">
-                    <i className="fab fa-linkedin"></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <img
-              className="rounded-full w-64 h-64"
-              src={imen}
-              alt="Imen Khlif"
-              onMouseEnter={onMouseEnter1}
-              onMouseLeave={onMouseLeave1}
-              style={{ filter: isShown1 ? "blur(2px)" : "none" }}
-            />
-            <div className="p-5 flex justify-center flex-col">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                Imen Khlif
-              </h5>
-              <p>General Secretary</p>
-              <div
-                className="member-socials"
-                style={{ display: isShown1 ? "inline-block" : "none" }}
-                onMouseEnter={onMouseEnter1}
-                onMouseLeave={onMouseLeave1}
-              >
-                <a href="https://facebook.com" target="_blank">
-                  <button className="facebook">
-                    <i className="fab fa-facebook"></i>
-                  </button>
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                  <button className="linkedin">
-                    <i className="fab fa-linkedin"></i>
-                  </button>
-                </a>
-              </div>
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <img
-              className="rounded-full w-64 h-64"
-              src={imen}
-              alt="Imen Khlif"
-              onMouseEnter={onMouseEnter1}
-              onMouseLeave={onMouseLeave1}
-              style={{ filter: isShown1 ? "blur(2px)" : "none" }}
-            />
+            <Image src={imen} />
             <div className="p-5 flex justify-center flex-col">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                Imen Khlif
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
+                Mohamed Yessine Ksibi
               </h5>
-              <p>General Secretary</p>
-              <div
-                className="member-socials"
-                style={{ display: isShown1 ? "inline-block" : "none" }}
-                onMouseEnter={onMouseEnter1}
-                onMouseLeave={onMouseLeave1}
-              >
-                <a href="https://facebook.com" target="_blank">
-                  <button className="facebook">
-                    <i className="fab fa-facebook"></i>
-                  </button>
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                  <button className="linkedin">
-                    <i className="fab fa-linkedin"></i>
-                  </button>
-                </a>
-              </div>
+              <p className="text-center">Chairman</p>
+            </div>
+          </div>
+          <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
+            <Image src={imen} />
+            <div className="p-5 flex justify-center flex-col">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
+                Mohamed Yessine Ksibi
+              </h5>
+              <p className="text-center">Chairman</p>
+            </div>
+          </div>
+          <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
+            <Image src={imen} />
+            <div className="p-5 flex justify-center flex-col">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
+                Mohamed Yessine Ksibi
+              </h5>
+              <p className="text-center">Chairman</p>
+            </div>
+          </div>
+          <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
+            <Image src={imen} />
+            <div className="p-5 flex justify-center flex-col">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
+                Mohamed Yessine Ksibi
+              </h5>
+              <p className="text-center">Chairman</p>
+            </div>
+          </div>
+          <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
+            <Image src={imen} />
+            <div className="p-5 flex justify-center flex-col">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
+                Mohamed Yessine Ksibi
+              </h5>
+              <p className="text-center">Chairman</p>
+            </div>
+          </div>
+          <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
+            <Image src={imen} />
+            <div className="p-5 flex justify-center flex-col">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
+                Mohamed Yessine Ksibi
+              </h5>
+              <p className="text-center">Chairman</p>
+            </div>
+          </div>
+          <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
+            <Image src={imen} />
+            <div className="p-5 flex justify-center flex-col">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
+                Mohamed Yessine Ksibi
+              </h5>
+              <p className="text-center">Chairman</p>
+            </div>
+          </div>
+          <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
+            <Image src={imen} />
+            <div className="p-5 flex justify-center flex-col">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
+                Mohamed Yessine Ksibi
+              </h5>
+              <p className="text-center">Chairman</p>
+            </div>
+          </div>
+          <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
+            <Image src={imen} />
+            <div className="p-5 flex justify-center flex-col">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
+                Mohamed Yessine Ksibi
+              </h5>
+              <p className="text-center">Chairman</p>
             </div>
           </div>
         </div>
