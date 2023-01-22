@@ -26,17 +26,6 @@ const Home = () => {
     setOpen(false);
   };
 
-  const [isShown, setIsShown] = useState(false);
-
-
-  const onMouseEnter = () => {
-    setIsShown(true);
-  };
-
-  const onMouseLeave = () => {
-    setIsShown(false);
-  };
-
   const btnstyles = {
     background: "rgb(229,246,255)",
     width: "200px",
