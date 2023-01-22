@@ -1,21 +1,20 @@
 import {} from "./contact.css";
+import { useState } from "react";
 import Button from "@mui/material/Button";
 import contactbot from "../../images/PNG/contactbot.png";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
-  const btnstyles = {
-    background: "rgb(229,246,255)",
-    "&:hover": {
-      background: "rgb(28,203,200)",
-    },
-    width: "200px",
-    borderradius: "30px",
-    padding: "13px",
-    boxshadow: "5px 5px #F8F3FC",
-    fontweight: "500",
-    color: "black",
-    mt: "20px",
-    alignSelf: "center",
+  const [submitted, setSubmitted] = useState(false);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    fetch("https://formspree.io/f/myyazozr", {
+      method: "POST",
+      body: formData,
+    });
+    setSubmitted(true);
+    event.target.reset();
   };
 
   return (
@@ -24,8 +23,13 @@ const Contact = () => {
         <img src={contactbot} width="300px" className="contact-img" />
         <div className="contact-header-content">
           <h1>We want to hear from you!</h1>
-          <form className="contact-form">
-            {/* <i class="fas fa-user"></i> */}
+          <form
+            className="contact-form"
+            onSubmit={handleSubmit}
+            action="https://formspree.io/f/myyazozr"
+            method="POST"
+          >
+            {submitted ? <p className="successMessage">Form submitted successfully!</p> : null}
             <input
               type="text"
               name="name"
@@ -54,7 +58,13 @@ const Contact = () => {
               placeholder="Message"
               className="contact-form-input"
             ></textarea>
-            <Button sx={btnstyles}>Send</Button>
+            <button
+              type="submit"
+              // disabled={state.submitting}
+              className="btnsubmit"
+            >
+              Send
+            </button>
           </form>
         </div>
       </div>

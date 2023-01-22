@@ -39,6 +39,27 @@
   outline: none;
 }
 
+.btnsubmit{
+  background: rgb(203, 237, 255);
+  width: 200px;
+  border-radius: 5px;
+  padding: 13px;
+  box-shadow: 5px 5px #F8F3FC;
+  font-weight: 500;
+  color: black;
+  margin-top: 20px;
+  align-Self: center;
+}
+
+.successMessage{
+  color: deepskyblue;
+  font-size: 20px;
+}
+
+.btnsubmit:hover{
+  background-color:rgb(28,203,200);
+}
+
 .map {
   margin: 40px 0px;
   display: flex;
