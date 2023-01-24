@@ -13,7 +13,7 @@ function Image({ src }) {
         <img
           src={src}
           style={{ filter: isHovered ? 'blur(5px)' : 'none' }}
-          className="rounded-full w-64 h-64"
+          className="w-64 h-64"
         />
         {isHovered && (
           <div >

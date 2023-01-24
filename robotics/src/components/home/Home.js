@@ -1,9 +1,17 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {} from "./home.css";
-import homebot from "../../images/PNG/homebot.png"
-import yessine from "../../images/members/yessine.jpg";
-import imen from "../../images/members/imen.jpeg";
+import homebot from "../../images/PNG/homebot.png";
+import yessine from "../../images/members/yessine.png";
+import imen from "../../images/members/imen.png";
+import firas from "../../images/members/firas.png";
+import bilel from "../../images/members/bilel.png";
+import fatma from "../../images/members/fatma.png";
+import oumaima from "../../images/members/oumaima.png";
+import jihen from "../../images/members/jihen.png";
+import najd from "../../images/members/najd.png";
+import yosr from "../../images/members/yosr.png";
+import iskander from "../../images/members/iskandar.png";
 import committee from "../../images/members-section-cover.png";
 import arduino from "../../images/arduino-training.jpg";
 import activities from "../../images/activities-section-cover.png";
@@ -39,7 +47,7 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <section className="header">
-        <img src={homebot} width="300px" className="homebot"/>
+        <img src={homebot} width="300px" className="homebot" />
         <div className="header-content pb-16">
           <h1> IIT Robotics Club </h1>
           <br />
@@ -59,10 +67,21 @@ const Home = () => {
         </div>
 
         <div className="members-container grid grid-cols-3">
-
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <Image src={yessine} />
-            <div className="p-5 flex justify-center flex-col">
+            <img className="w-64 h-64" src={yessine} />
+            <div>
+              <a href="https://www.facebook.com/medyessine.ksibi.56" target="_blank">
+                <button className="facebook">
+                  <i className="fab fa-facebook"></i>
+                </button>
+              </a> &nbsp;
+              <a href="https://linkedin.com" target="_blank">
+                <button className="linkedin">
+                  <i className="fab fa-linkedin"></i>
+                </button>
+              </a>
+            </div>
+            <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
                 Mohamed Yessine Ksibi
               </h5>
@@ -70,84 +89,192 @@ const Home = () => {
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <Image src={imen} />
-            <div className="p-5 flex justify-center flex-col">
+            <img className="w-64 h-64" src={imen} />
+            <div>
+              <a href="https://www.facebook.com/imen.khlif.50" target="_blank">
+                <button className="facebook">
+                  <i className="fab fa-facebook"></i>
+                </button>
+              </a> &nbsp;
+              <a href="https://linkedin.com" target="_blank">
+                <button className="linkedin">
+                  <i className="fab fa-linkedin"></i>
+                </button>
+              </a>
+            </div>
+            <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
-                Mohamed Yessine Ksibi
+                Imen Khlif
               </h5>
-              <p className="text-center">Chairman</p>
+              <p className="text-center">General Secretary</p>
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <Image src={imen} />
-            <div className="p-5 flex justify-center flex-col">
+            <img className="w-64 h-64" src={firas} />
+            <div>
+              <a href="https://www.facebook.com/firas.raouin" target="_blank">
+                <button className="facebook">
+                  <i className="fab fa-facebook"></i>
+                </button>
+              </a> &nbsp;
+              <a href="https://linkedin.com" target="_blank">
+                <button className="linkedin">
+                  <i className="fab fa-linkedin"></i>
+                </button>
+              </a>
+            </div>
+            <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
-                Mohamed Yessine Ksibi
+                Firas Raouin
               </h5>
-              <p className="text-center">Chairman</p>
+              <p className="text-center">Communication Manager</p>
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <Image src={imen} />
-            <div className="p-5 flex justify-center flex-col">
+            <img className="w-64 h-64" src={bilel} />
+            <div>
+              <a href="https://www.facebook.com/bilel.baccour.3" target="_blank">
+                <button className="facebook">
+                  <i className="fab fa-facebook"></i>
+                </button>
+              </a> &nbsp;
+              <a href="https://linkedin.com" target="_blank">
+                <button className="linkedin">
+                  <i className="fab fa-linkedin"></i>
+                </button>
+              </a>
+            </div>
+            <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
-                Mohamed Yessine Ksibi
+                Bilel Baccour
               </h5>
-              <p className="text-center">Chairman</p>
+              <p className="text-center">Logistics Manager</p>
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <Image src={imen} />
-            <div className="p-5 flex justify-center flex-col">
+            <img className="w-64 h-64" src={fatma} />
+            <div>
+              <a href="https://www.facebook.com/fatoum.fafou" target="_blank">
+                <button className="facebook">
+                  <i className="fab fa-facebook"></i>
+                </button>
+              </a> &nbsp;
+              <a href="https://linkedin.com" target="_blank">
+                <button className="linkedin">
+                  <i className="fab fa-linkedin"></i>
+                </button>
+              </a>
+            </div>
+            <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
-                Mohamed Yessine Ksibi
+                Fatma Mbarek
               </h5>
-              <p className="text-center">Chairman</p>
+              <p className="text-center">Media Manager</p>
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <Image src={imen} />
-            <div className="p-5 flex justify-center flex-col">
+            <img className="w-64 h-64" src={oumaima} />
+            <div>
+              <a href="https://www.facebook.com/makboul.oumaima" target="_blank">
+                <button className="facebook">
+                  <i className="fab fa-facebook"></i>
+                </button>
+              </a> &nbsp;
+              <a href="https://linkedin.com" target="_blank">
+                <button className="linkedin">
+                  <i className="fab fa-linkedin"></i>
+                </button>
+              </a>
+            </div>
+            <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
-                Mohamed Yessine Ksibi
+                Oumaima Makboul
               </h5>
-              <p className="text-center">Chairman</p>
+              <p className="text-center">Design Manager</p>
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <Image src={imen} />
-            <div className="p-5 flex justify-center flex-col">
+            <img className="w-64 h-64" src={jihen} />
+            <div>
+              <a href="https://www.facebook.com/profile.php?id=100081130721685" target="_blank">
+                <button className="facebook">
+                  <i className="fab fa-facebook"></i>
+                </button>
+              </a> &nbsp;
+              <a href="https://linkedin.com" target="_blank">
+                <button className="linkedin">
+                  <i className="fab fa-linkedin"></i>
+                </button>
+              </a>
+            </div>
+            <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
-                Mohamed Yessine Ksibi
+                Jaweher Khelifi
               </h5>
-              <p className="text-center">Chairman</p>
+              <p className="text-center">Treasury Manager</p>
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <Image src={imen} />
-            <div className="p-5 flex justify-center flex-col">
+            <img className="w-64 h-64" src={najd} />
+            <div>
+              <a href="https://www.facebook.com/profile.php?id=100009968581035" target="_blank">
+                <button className="facebook">
+                  <i className="fab fa-facebook"></i>
+                </button>
+              </a> &nbsp;
+              <a href="https://linkedin.com" target="_blank">
+                <button className="linkedin">
+                  <i className="fab fa-linkedin"></i>
+                </button>
+              </a>
+            </div>
+            <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
-                Mohamed Yessine Ksibi
+                Najd Mseddi
               </h5>
-              <p className="text-center">Chairman</p>
+              <p className="text-center">Marketing Manager</p>
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <Image src={imen} />
-            <div className="p-5 flex justify-center flex-col">
+            <img className="w-64 h-64" src={yosr} />
+            <div>
+              <a href="https://www.facebook.com/profile.php?id=100010120291088" target="_blank">
+                <button className="facebook">
+                  <i className="fab fa-facebook"></i>
+                </button>
+              </a> &nbsp;
+              <a href="https://linkedin.com" target="_blank">
+                <button className="linkedin">
+                  <i className="fab fa-linkedin"></i>
+                </button>
+              </a>
+            </div>
+            <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
-                Mohamed Yessine Ksibi
+                Yosr Sellami
               </h5>
-              <p className="text-center">Chairman</p>
+              <p className="text-center">Event Manager</p>
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <Image src={imen} />
-            <div className="p-5 flex justify-center flex-col">
+            <img className="w-64 h-64" src={iskander} />
+            <div>
+              <a href="https://www.facebook.com/iskanderG4" target="_blank">
+                <button className="facebook">
+                  <i className="fab fa-facebook"></i>
+                </button>
+              </a> &nbsp;
+              <a href="https://linkedin.com" target="_blank">
+                <button className="linkedin">
+                  <i className="fab fa-linkedin"></i>
+                </button>
+              </a>
+            </div>
+            <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
-                Mohamed Yessine Ksibi
+                Iskander Souissi
               </h5>
-              <p className="text-center">Chairman</p>
+              <p className="text-center">Technical Manager</p>
             </div>
           </div>
         </div>

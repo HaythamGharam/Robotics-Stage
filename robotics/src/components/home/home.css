@@ -35,22 +35,12 @@
 
 /* members region start */
 .facebook {
-  position: absolute;
-  top: 38%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   color: #4267B2;
   font-size: 50px;
   cursor: pointer;
 }
 
 .linkedin {
-  position: absolute;
-  top: 38%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   color: #0072b1 ;
   font-size: 50px;
   cursor: pointer;
