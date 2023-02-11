@@ -14,6 +14,8 @@ import yosr from "../../images/members/yosr.png";
 import iskander from "../../images/members/iskandar.png";
 import committee from "../../images/members-section-cover.png";
 import arduino from "../../images/arduino-training.jpg";
+import formationArduino from "../../images/formation-arduino.jpg";
+import ai from "../../images/formation-ai.jpg";
 import activities from "../../images/activities-section-cover.png";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
@@ -65,22 +67,15 @@ const Home = () => {
             Our Executive Board
           </h1>
         </div>
-
         <div className="members-container grid grid-cols-3">
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <img className="w-64 h-64" src={yessine} />
-            <div>
-              <a href="https://www.facebook.com/medyessine.ksibi.56" target="_blank">
-                <button className="facebook">
-                  <i className="fab fa-facebook"></i>
-                </button>
-              </a> &nbsp;
-              <a href="https://linkedin.com" target="_blank">
-                <button className="linkedin">
-                  <i className="fab fa-linkedin"></i>
-                </button>
-              </a>
-            </div>
+            <Image
+              src={yessine}
+              icon1="facebook"
+              icon2="linkedin"
+              link1="https://www.facebook.com/medyessine.ksibi.56"
+              link2="https://linkedin.com"
+            />
             <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
                 Mohamed Yessine Ksibi
@@ -89,19 +84,13 @@ const Home = () => {
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <img className="w-64 h-64" src={imen} />
-            <div>
-              <a href="https://www.facebook.com/imen.khlif.50" target="_blank">
-                <button className="facebook">
-                  <i className="fab fa-facebook"></i>
-                </button>
-              </a> &nbsp;
-              <a href="https://linkedin.com" target="_blank">
-                <button className="linkedin">
-                  <i className="fab fa-linkedin"></i>
-                </button>
-              </a>
-            </div>
+          <Image
+              src={imen}
+              icon1="facebook"
+              icon2="linkedin"
+              link1="https://www.facebook.com/imen.khlif.50"
+              link2="https://linkedin.com"
+            />
             <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
                 Imen Khlif
@@ -110,19 +99,13 @@ const Home = () => {
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <img className="w-64 h-64" src={firas} />
-            <div>
-              <a href="https://www.facebook.com/firas.raouin" target="_blank">
-                <button className="facebook">
-                  <i className="fab fa-facebook"></i>
-                </button>
-              </a> &nbsp;
-              <a href="https://linkedin.com" target="_blank">
-                <button className="linkedin">
-                  <i className="fab fa-linkedin"></i>
-                </button>
-              </a>
-            </div>
+          <Image
+              src={firas}
+              icon1="facebook"
+              icon2="linkedin"
+              link1="https://www.facebook.com/firas.raouin"
+              link2="https://linkedin.com"
+            />
             <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
                 Firas Raouin
@@ -131,19 +114,13 @@ const Home = () => {
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <img className="w-64 h-64" src={bilel} />
-            <div>
-              <a href="https://www.facebook.com/bilel.baccour.3" target="_blank">
-                <button className="facebook">
-                  <i className="fab fa-facebook"></i>
-                </button>
-              </a> &nbsp;
-              <a href="https://linkedin.com" target="_blank">
-                <button className="linkedin">
-                  <i className="fab fa-linkedin"></i>
-                </button>
-              </a>
-            </div>
+          <Image
+              src={bilel}
+              icon1="facebook"
+              icon2="linkedin"
+              link1="https://www.facebook.com/bilel.baccour.3"
+              link2="https://linkedin.com"
+            />
             <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
                 Bilel Baccour
@@ -152,19 +129,13 @@ const Home = () => {
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <img className="w-64 h-64" src={fatma} />
-            <div>
-              <a href="https://www.facebook.com/fatoum.fafou" target="_blank">
-                <button className="facebook">
-                  <i className="fab fa-facebook"></i>
-                </button>
-              </a> &nbsp;
-              <a href="https://linkedin.com" target="_blank">
-                <button className="linkedin">
-                  <i className="fab fa-linkedin"></i>
-                </button>
-              </a>
-            </div>
+          <Image
+              src={fatma}
+              icon1="facebook"
+              icon2="linkedin"
+              link1="https://www.facebook.com/fatoum.fafou"
+              link2="https://linkedin.com"
+            />
             <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
                 Fatma Mbarek
@@ -173,19 +144,13 @@ const Home = () => {
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <img className="w-64 h-64" src={oumaima} />
-            <div>
-              <a href="https://www.facebook.com/makboul.oumaima" target="_blank">
-                <button className="facebook">
-                  <i className="fab fa-facebook"></i>
-                </button>
-              </a> &nbsp;
-              <a href="https://linkedin.com" target="_blank">
-                <button className="linkedin">
-                  <i className="fab fa-linkedin"></i>
-                </button>
-              </a>
-            </div>
+          <Image
+              src={oumaima}
+              icon1="facebook"
+              icon2="linkedin"
+              link1="https://www.facebook.com/makboul.oumaima"
+              link2="https://linkedin.com"
+            />
             <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
                 Oumaima Makboul
@@ -194,19 +159,13 @@ const Home = () => {
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <img className="w-64 h-64" src={jihen} />
-            <div>
-              <a href="https://www.facebook.com/profile.php?id=100081130721685" target="_blank">
-                <button className="facebook">
-                  <i className="fab fa-facebook"></i>
-                </button>
-              </a> &nbsp;
-              <a href="https://linkedin.com" target="_blank">
-                <button className="linkedin">
-                  <i className="fab fa-linkedin"></i>
-                </button>
-              </a>
-            </div>
+          <Image
+              src={jihen}
+              icon1="facebook"
+              icon2="linkedin"
+              link1="https://www.facebook.com/profile.php?id=100081130721685"
+              link2="https://linkedin.com"
+            />
             <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
                 Jaweher Khelifi
@@ -215,19 +174,13 @@ const Home = () => {
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <img className="w-64 h-64" src={najd} />
-            <div>
-              <a href="https://www.facebook.com/profile.php?id=100009968581035" target="_blank">
-                <button className="facebook">
-                  <i className="fab fa-facebook"></i>
-                </button>
-              </a> &nbsp;
-              <a href="https://linkedin.com" target="_blank">
-                <button className="linkedin">
-                  <i className="fab fa-linkedin"></i>
-                </button>
-              </a>
-            </div>
+          <Image
+              src={najd}
+              icon1="facebook"
+              icon2="linkedin"
+              link1="https://www.facebook.com/profile.php?id=100009968581035"
+              link2="https://linkedin.com"
+            />
             <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
                 Najd Mseddi
@@ -236,19 +189,13 @@ const Home = () => {
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <img className="w-64 h-64" src={yosr} />
-            <div>
-              <a href="https://www.facebook.com/profile.php?id=100010120291088" target="_blank">
-                <button className="facebook">
-                  <i className="fab fa-facebook"></i>
-                </button>
-              </a> &nbsp;
-              <a href="https://linkedin.com" target="_blank">
-                <button className="linkedin">
-                  <i className="fab fa-linkedin"></i>
-                </button>
-              </a>
-            </div>
+          <Image
+              src={yosr}
+              icon1="facebook"
+              icon2="linkedin"
+              link1="https://www.facebook.com/profile.php?id=100010120291088"
+              link2="https://linkedin.com"
+            />
             <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
                 Yosr Sellami
@@ -257,19 +204,13 @@ const Home = () => {
             </div>
           </div>
           <div className="m-auto max-w-xs bg-white flex flex-col justify-center items-center relative">
-            <img className="w-64 h-64" src={iskander} />
-            <div>
-              <a href="https://www.facebook.com/iskanderG4" target="_blank">
-                <button className="facebook">
-                  <i className="fab fa-facebook"></i>
-                </button>
-              </a> &nbsp;
-              <a href="https://linkedin.com" target="_blank">
-                <button className="linkedin">
-                  <i className="fab fa-linkedin"></i>
-                </button>
-              </a>
-            </div>
+          <Image
+              src={iskander}
+              icon1="facebook"
+              icon2="linkedin"
+              link1="https://www.facebook.com/iskanderG4"
+              link2="https://linkedin.com"
+            />
             <div className="mb-7 flex justify-center flex-col">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">
                 Iskander Souissi
@@ -312,7 +253,7 @@ const Home = () => {
         </div>
         <div className="activities-display">
           <div className="activity">
-            <img src={arduino} alt="#" className="act-img" />
+            <img src={formationArduino} alt="#" className="act-img" />
             <h3 className="act-title text-white font-bold">Arduino Training</h3>
             <p className="font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
@@ -347,8 +288,8 @@ const Home = () => {
             </div>
           </div>
           <div className="activity">
-            <img src={arduino} alt="#" className="act-img" />
-            <h3 className="act-title text-white font-bold">Arduino Training</h3>
+            <img src={ai} alt="#" className="act-img" />
+            <h3 className="act-title text-white font-bold">Ai Training</h3>
             <p className="font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
               omnis!
